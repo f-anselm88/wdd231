@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Ondangwa Coffee Roasters",
+    "tagline": "Single-origin Namibian coffee, roasted weekly",
+    "category": "Cafe",
+    "email": "hello@ondangwaroasters.na",
+    "phone": "061 555 0114",
+    "url": "https://ondangwaroasters.na",
+    "initials": "OC"
+  },
+  {
+    "name": "Kalahari Code Studio",
+    "tagline": "Web and mobile development for local business",
+    "category": "Technology",
+    "email": "team@kalahariCode.na",
+    "phone": "061 555 0128",
+    "url": "https://kalahariCode.na",
+    "initials": "KC"
+  },
+  {
+    "name": "Namib Linen Co.",
+    "tagline": "Handmade bed linen and home textiles",
+    "category": "Retail",
+    "email": "orders@namiblinen.na",
+    "phone": "061 555 0142",
+    "url": "https://namiblinen.na",
+    "initials": "NL"
+  },
+  {
+    "name": "Windhoek Dune Tours",
+    "tagline": "Guided desert and wildlife excursions",
+    "category": "Tourism",
+    "email": "book@dunetours.na",
+    "phone": "061 555 0156",
+    "url": "https://dunetours.na",
+    "initials": "WD"
+  },
+  {
+    "name": "Katutura Legal Partners",
+    "tagline": "Business and contract law for small enterprise",
+    "category": "Professional Services",
+    "email": "info@katuturalegal.na",
+    "phone": "061 555 0163",
+    "url": "https://katuturalegal.na",
+    "initials": "KL"
+  },
+  {
+    "name": "Auas Motor Works",
+    "tagline": "Full-service vehicle repair and diagnostics",
+    "category": "Automotive",
+    "email": "service@auasmotor.na",
+    "phone": "061 555 0177",
+    "url": "https://auasmotor.na",
+    "initials": "AM"
+  },
+  {
+    "name": "Chameleon Art Gallery",
+    "tagline": "Contemporary Namibian art and framing",
+    "category": "Arts & Culture",
+    "email": "curator@chameleongallery.na",
+    "phone": "061 555 0189",
+    "url": "https://chameleongallery.na",
+    "initials": "CA"
+  },
+  {
+    "name": "Independence Ave Books",
+    "tagline": "Independent bookstore and reading events",
+    "category": "Retail",
+    "email": "shop@iavebooks.na",
+    "phone": "061 555 0195",
+    "url": "https://iavebooks.na",
+    "initials": "IB"
+  },
+  {
+    "name": "The Catalist",
+    "tagline": "Advertising services and home textile sales",
+    "category": "Marketing",
+    "email": "hello@thecatalist.na",
+    "phone": "061 555 0201",
+    "url": "https://thecatalist.na",
+    "initials": "TC"
+  }
+]

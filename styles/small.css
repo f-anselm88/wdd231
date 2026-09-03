@@ -1,0 +1,289 @@
+:root {
+  --color-bg: #EDEFEA;
+  --color-surface: #FFFFFF;
+  --color-ink: #1B2621;
+  --color-teal: #1F4E4A;
+  --color-sand: #D9A056;
+  --color-sky: #4C7A99;
+  --font-body: "Space Grotesk", sans-serif;
+  --radius: 6px;
+  --gap: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--color-teal);
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--color-sky);
+}
+
+/* ---------- Header ---------- */
+header {
+  background-color: var(--color-surface);
+  border-bottom: 2px solid var(--color-teal);
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.site-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  width: 40px;
+  height: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  background-color: var(--color-teal);
+  border-radius: 2px;
+}
+
+#primaryNav {
+  display: none;
+  width: 100%;
+  order: 3;
+}
+
+#primaryNav.open {
+  display: block;
+}
+
+#primaryNav ul {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+#primaryNav a {
+  display: block;
+  padding: 0.6rem 0.4rem;
+  text-decoration: none;
+  color: var(--color-ink);
+  border-radius: var(--radius);
+}
+
+#primaryNav a:hover,
+#primaryNav a:focus-visible {
+  background-color: var(--color-bg);
+  color: var(--color-teal);
+}
+
+#primaryNav a.current {
+  font-weight: 700;
+  color: var(--color-teal);
+  border-bottom: 2px solid var(--color-sand);
+}
+
+/* ---------- Main ---------- */
+main {
+  padding: 1.25rem 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 0 0 1rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  color: var(--color-teal);
+  border-bottom: 2px solid var(--color-sand);
+  padding-bottom: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+/* About */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+}
+
+.quick-facts {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  background-color: var(--color-surface);
+  border-left: 4px solid var(--color-sand);
+  border-radius: var(--radius);
+}
+
+.quick-facts li {
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--color-bg);
+}
+
+.quick-facts li:last-child {
+  border-bottom: none;
+}
+
+/* Courses */
+.course-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-btn {
+  font-family: var(--font-body);
+  background-color: var(--color-surface);
+  border: 2px solid var(--color-teal);
+  color: var(--color-teal);
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: var(--color-teal);
+  color: var(--color-surface);
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+}
+
+.course-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius);
+  padding: 1rem;
+  border-top: 4px solid var(--color-sky);
+}
+
+.course-card.completed {
+  border-top-color: var(--color-sand);
+  background-color: #FBF4E8;
+}
+
+.course-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+}
+
+.course-card .badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background-color: var(--color-sky);
+  color: var(--color-surface);
+  margin-top: 0.5rem;
+}
+
+.course-card.completed .badge {
+  background-color: var(--color-sand);
+}
+
+.credit-total {
+  font-weight: 700;
+}
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+}
+
+.project-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius);
+  padding: 1.1rem;
+  border-left: 4px solid var(--color-teal);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: var(--color-teal);
+}
+
+.tech-tags {
+  font-size: 0.85rem;
+  color: var(--color-sky);
+  margin-bottom: 0;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: var(--color-teal);
+  color: var(--color-bg);
+  padding: 1.25rem 1rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0.35rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-social a {
+  color: var(--color-sand);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-social a:hover,
+.footer-social a:focus-visible {
+  color: var(--color-bg);
+  text-decoration: underline;
+}
