@@ -1,100 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anselm Munango | WDD 231 Course Home</title>
-  <meta name="description" content="Anselm Munango — I am Junior Full-Stack Developer based in Windhoek, Namibia.">
-  <meta name="author" content="Anselm Munango">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/larger.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 231 | Anselm Munango</title>
+  <meta name="description" content="Course home page for Anselm Munango, WDD 231 Web Frontend Development I, BYU-Idaho." />
+  <meta name="author" content="Anselm Munango" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
-  <script src="scripts/courses.js" defer></script>
+  <script src="scripts/course.js" defer></script>
 </head>
 <body>
-
   <header>
-    <div class="brand">
-      <img src="images/profile-photo.jpg" alt="Anselm Munango" class="logo" width="40" height="40">
-      <span class="site-name">Anselm Munango</span>
-    </div>
-    <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation menu">
-      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    <img src="images/logo.svg" alt="Site logo" width="40" height="40" />
+    <span class="site-name">Anselm Munango</span>
+    <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+      <span class="sr-only">Menu</span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </button>
-    <nav id="primaryNav">
-      <ul>
-        <li><a href="index.html" class="current" aria-current="page">Home</a></li>
-        <li><a href="chamber/index.html">Chamber</a></li>
-        <li><a href="final/index.html">Final</a></li>
-      </ul>
-    </nav>
   </header>
+
+  <nav id="primary-nav">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="chamber/directory.html">Chamber Project</a>
+    <a href="final.html">Final Project</a>
+  </nav>
 
   <main>
     <h1>Home</h1>
 
-    <section class="about" aria-labelledby="aboutHeading">
-      <h2 id="aboutHeading">About Me</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>I'm a junior full-stack developer based in Windhoek, Namibia, originally from the Kavango region and a native Rukwangali speaker. I'm currently pursuing a BS in Software Development through BYU-Idaho and BYU-Pathway Worldwide, working across React, JavaScript, C#, Python, and REST APIs.</p>
-          <p>Before development, I spent two years serving a mission in Ghana — work that shaped how I approach problems now: patiently, cross-culturally, and with an eye for what actually helps people. That same instinct drives my flagship project, a language-learning platform built to keep Rukwangali alive for the next generation of speakers.</p>
-          <p>I also run <a href="https://f-anselm88.github.io" target="_blank" rel="noopener">The Catalist</a>, a small advertising and retail business, which keeps me fluent in shipping real products for real clients — not just coursework.</p>
-        </div>
-        <ul class="quick-facts">
-          <li><strong>Based in</strong> Windhoek, Namibia</li>
-          <li><strong>Studying</strong> BS Software Development, BYU-Idaho</li>
-          <li><strong>Stack</strong> React · JavaScript · C# · Python</li>
-          <li><strong>Building</strong> Eraka Lyetu, a Rukwangali learning app</li>
-        </ul>
-      </div>
-    </section>
+    <div class="intro-row">
+      <section class="about-me">
+        <h2>About Me</h2>
+        <p>
+          I'm a junior full-stack developer based in Windhoek, Namibia, originally from the
+          Kavango region and a native Rukwangali speaker. I'm pursuing a BS in Software
+          Development through BYU-Idaho and BYU-Pathway Worldwide, working across React,
+          JavaScript, C#, Python, and REST APIs. Before development, I spent two years serving
+          a mission in Ghana, work that shaped how I approach problems now &mdash; patiently,
+          cross-culturally, and with an eye for what actually helps people. I also run
+          <a href="https://thecatalist.na" target="_blank" rel="noopener">The Catalist</a>, a
+          small advertising and retail business, which keeps me fluent in shipping real
+          products for real clients.
+        </p>
+      </section>
 
-    <section class="courses" aria-labelledby="coursesHeading">
-      <h2 id="coursesHeading">Certificate Coursework</h2>
-      <p>Courses in the Web and Computer Programming certificate, part of my Software Development degree.</p>
-      <div class="course-filters">
-        <button type="button" data-filter="all" class="filter-btn active">All Courses</button>
-        <button type="button" data-filter="wdd" class="filter-btn">WDD Courses</button>
-        <button type="button" data-filter="cse" class="filter-btn">CSE Courses</button>
-      </div>
-      <div id="courseList" class="course-list"></div>
-      <p class="credit-total">Total credits shown: <span id="creditTotal">0</span></p>
-    </section>
+      <section class="student-photo">
+        <h2>Student Photo</h2>
+        <img src="images/profile.jpg" alt="Portrait of Anselm Munango" width="320" height="320" />
+      </section>
+    </div>
 
-    <section class="projects" aria-labelledby="projectsHeading">
-      <h2 id="projectsHeading">What I'm Building</h2>
-      <div class="project-grid">
-        <article class="project-card">
-          <h3>Eraka Lyetu</h3>
-          <p>A full-stack Rukwangali language-learning platform built with React and Vite. It uses the SM-2 spaced-repetition algorithm, Web Speech API pronunciation practice, an AI tutor powered by the Anthropic API, and a bilingual Gospel of John reading section — with XP, streaks, and leaderboards to keep learners coming back.</p>
-          <p class="tech-tags">React · Vite · Web Speech API · Anthropic API</p>
-        </article>
-        <article class="project-card">
-          <h3>The Catalist</h3>
-          <p>A small advertising and retail business I run alongside my studies, with a custom-built site handling everything from client-facing marketing to product listings — practical, shipped software with a live customer base.</p>
-          <p class="tech-tags">HTML · CSS · JavaScript</p>
-        </article>
+    <section class="courses">
+      <h2>Web Certificate Courses</h2>
+      <div class="filter-buttons" role="group" aria-label="Filter courses by subject">
+        <button class="filter-btn" data-subject="ALL" aria-pressed="true">All</button>
+        <button class="filter-btn" data-subject="CSE" aria-pressed="false">CSE</button>
+        <button class="filter-btn" data-subject="WDD" aria-pressed="false">WDD</button>
       </div>
+      <ul id="course-list" class="course-list"></ul>
+      <p class="credit-line">The total credits for the courses listed above is <span id="credit-total">0</span>.</p>
     </section>
   </main>
 
   <footer>
-    <div class="footer-social">
-      <a href="https://github.com/f-anselm88" target="_blank" rel="noopener" aria-label="GitHub profile">GitHub</a>
-      <a href="https://www.linkedin.com/in/anselm-munango-bs" target="_blank" rel="noopener" aria-label="LinkedIn profile">LinkedIn</a>
-      <a href="https://f-anselm88.github.io" target="_blank" rel="noopener" aria-label="Portfolio site">Portfolio</a>
+    <div class="social-row">
+      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+      <a href="https://github.com/f-anselm88" target="_blank" rel="noopener" aria-label="GitHub">gh</a>
+      <a href="https://x.com" target="_blank" rel="noopener" aria-label="X">X</a>
     </div>
-    <p>&copy; <span id="year"></span> Anselm Munango, Namibia</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
+    <p>&copy; <span id="year"></span> &bull; Anselm Munango &bull; Windhoek, Namibia</p>
+    <p id="lastModified"></p>
   </footer>
-
 </body>
 </html>
