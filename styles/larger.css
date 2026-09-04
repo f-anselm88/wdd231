@@ -1,70 +1,62 @@
-@media screen and (min-width: 640px) {
-
+@media (min-width: 700px) {
   header {
-    flex-wrap: nowrap;
     padding: 1rem 2rem;
   }
 
-  .menu-toggle {
+  .nav-toggle {
     display: none;
   }
 
-  #primaryNav {
-    display: block;
-    width: auto;
-    order: 2;
-  }
-
-  #primaryNav ul {
+  #primary-nav {
+    display: flex;
     flex-direction: row;
-    margin: 0;
-    gap: 0.5rem;
+    justify-content: center;
   }
 
-  #primaryNav a {
-    padding: 0.5rem 0.9rem;
+  #primary-nav a {
+    border-bottom: 3px solid transparent;
+    transition: background-color 0.15s ease;
+  }
+
+  #primary-nav a:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  #primary-nav a[aria-current="page"] {
+    border-bottom-color: var(--accent);
   }
 
   main {
-    padding: 2rem 2rem 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
   }
 
-  h1 {
-    font-size: 2.3rem;
+  .intro-row {
+    flex-direction: row;
+    align-items: stretch;
   }
 
-  .about-grid {
-    grid-template-columns: 2fr 1fr;
-    align-items: start;
+  .about-me {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
   }
 
-  .course-list {
-    grid-template-columns: repeat(2, 1fr);
+  .about-me p {
+    flex: 1;
   }
 
-  .project-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .student-photo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
 
-  footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    text-align: left;
-    padding: 1.25rem 2rem;
+  .student-photo img {
+    flex: 1;
   }
 
-  .footer-social {
-    justify-content: flex-start;
-    margin-bottom: 0;
-  }
-
-  footer p {
-    margin: 0;
-  }
-}
-
-@media screen and (min-width: 960px) {
   .course-list {
     grid-template-columns: repeat(3, 1fr);
   }
