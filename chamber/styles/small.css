@@ -1,0 +1,283 @@
+/* =========================================================
+   Design tokens
+   Windhoek Chamber of Commerce
+   Palette grounded in Namibian high-desert light: deep
+   indigo sky, sand paper background, ochre dune accent.
+   ========================================================= */
+:root {
+  --color-ink: #23211D;
+  --color-indigo: #1B3A4B;
+  --color-indigo-dark: #12262F;
+  --color-sand: #F6F2E9;
+  --color-sand-raised: #EEE7D6;
+  --color-ochre: #C97B3D;
+  --color-ochre-dark: #A85F27;
+  --color-gold: #B9902E;
+  --color-silver: #6E7A80;
+  --color-line: #DED5C0;
+  --color-white: #FFFFFF;
+
+  --font-display: 'Fraunces', 'Iowan Old Style', 'Georgia', serif;
+  --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+
+  --radius: 3px;
+  --content-max: 72rem;
+}
+
+html {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background-color: var(--color-sand);
+}
+
+body {
+  background-color: var(--color-sand);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--color-indigo-dark);
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.4rem; }
+
+p { max-width: 68ch; }
+
+a { color: var(--color-indigo); }
+a:hover { color: var(--color-ochre-dark); }
+
+:focus-visible {
+  outline: 3px solid var(--color-ochre);
+  outline-offset: 2px;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  background-color: var(--color-indigo-dark);
+  color: var(--color-white);
+  padding-inline: 1rem;
+}
+
+.header-inner {
+  max-width: var(--content-max);
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0.9rem;
+}
+
+.wordmark {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.wordmark-mark {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.wordmark-sub {
+  font-size: 0.8rem;
+  color: var(--color-line);
+}
+
+.nav-toggle {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: var(--radius);
+  padding: 0.4rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--color-white);
+}
+
+.primary-nav {
+  display: none;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.primary-nav.is-open {
+  display: block;
+}
+
+.primary-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.primary-nav a {
+  display: block;
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 0.6rem 0.2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.primary-nav a[aria-current="page"] {
+  color: var(--color-ochre);
+}
+
+/* ---------- Page intro ---------- */
+.page-intro {
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding: 1.75rem 1rem 1rem;
+}
+
+.page-intro p {
+  color: #4A463D;
+}
+
+/* ---------- View controls ---------- */
+.directory-controls {
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding: 0 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.view-toggle {
+  display: inline-flex;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.view-toggle button {
+  background-color: var(--color-white);
+  border: none;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.9rem;
+  color: var(--color-indigo-dark);
+}
+
+.view-toggle button + button {
+  border-left: 1px solid var(--color-line);
+}
+
+.view-toggle button[aria-pressed="true"] {
+  background-color: var(--color-indigo-dark);
+  color: var(--color-white);
+}
+
+.member-count {
+  font-size: 0.9rem;
+  color: #6B6659;
+}
+
+/* ---------- Member directory ---------- */
+.directory {
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding: 0 1rem 3rem;
+}
+
+.member-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.member-list.is-list .member-card {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+.member-list.is-list .member-card img {
+  width: 4.5rem;
+  height: 4.5rem;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.member-list.is-list .member-card .member-body p {
+  display: none;
+}
+
+.member-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.member-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-bottom: 0.75rem;
+}
+
+.member-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+
+.member-tier {
+  display: inline-block;
+  font-size: 0.72rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius);
+  margin-bottom: 0.4rem;
+}
+
+.tier-1 { background-color: var(--color-sand-raised); color: #6B6659; }
+.tier-2 { background-color: #E7EBEC; color: var(--color-silver); }
+.tier-3 { background-color: #F3E7CB; color: var(--color-gold); }
+
+.member-card address {
+  font-style: normal;
+  font-size: 0.88rem;
+  color: #504C42;
+}
+
+.member-card .member-links {
+  margin-top: 0.6rem;
+  font-size: 0.88rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background-color: var(--color-indigo-dark);
+  color: var(--color-line);
+}
+
+.footer-inner {
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.footer-inner a {
+  color: var(--color-white);
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Okambo Coffee Roasters",
+    "address": "14 Independence Ave, Windhoek",
+    "phone": "+264 61 220 145",
+    "email": "info@okambocoffee.example",
+    "website": "https://example.com/okambo-coffee",
+    "image": "okambo-coffee.webp",
+    "membership": 3,
+    "category": "Food & Beverage",
+    "tagline": "Small-batch roaster sourcing beans from the Kavango and Zambezi regions."
+  },
+  {
+    "name": "Kalahari Code Collective",
+    "address": "22 Sam Nujoma Dr, Windhoek",
+    "phone": "+264 61 302 981",
+    "email": "info@kalaharicode.example",
+    "website": "https://example.com/kalahari-code",
+    "image": "kalahari-code.webp",
+    "membership": 3,
+    "category": "Technology",
+    "tagline": "A software studio building web and mobile products for Namibian SMEs."
+  },
+  {
+    "name": "Namib Trails Tours",
+    "address": "6 Bahnhof St, Windhoek",
+    "phone": "+264 61 401 552",
+    "email": "info@namibtrails.example",
+    "website": "https://example.com/namib-trails",
+    "image": "namib-trails.webp",
+    "membership": 2,
+    "category": "Tourism",
+    "tagline": "Guided desert and wildlife excursions departing daily from the capital."
+  },
+  {
+    "name": "Erongo Hardware & Supply",
+    "address": "5 Mandume Ndemufayo Ave, Windhoek",
+    "phone": "+264 61 233 764",
+    "email": "info@erongohardware.example",
+    "website": "https://example.com/erongo-hardware",
+    "image": "erongo-hardware.webp",
+    "membership": 1,
+    "category": "Retail",
+    "tagline": "Building materials and tools for contractors across the Khomas region."
+  },
+  {
+    "name": "Munango & Partners Law",
+    "address": "31 Robert Mugabe Ave, Windhoek",
+    "phone": "+264 61 275 390",
+    "email": "info@munangopartners.example",
+    "website": "https://example.com/munango-partners",
+    "image": "munango-partners.webp",
+    "membership": 3,
+    "category": "Professional Services",
+    "tagline": "Business and contract law for startups and established Namibian firms."
+  },
+  {
+    "name": "Sossus Bakehouse",
+    "address": "9 Werner List St, Windhoek",
+    "phone": "+264 61 248 617",
+    "email": "info@sossusbakehouse.example",
+    "website": "https://example.com/sossus-bakehouse",
+    "image": "sossus-bakehouse.webp",
+    "membership": 1,
+    "category": "Food & Beverage",
+    "tagline": "Wood-fired sourdough and pastries baked fresh every morning."
+  },
+  {
+    "name": "Ondangwa Design Studio",
+    "address": "18 Fidel Castro St, Windhoek",
+    "phone": "+264 61 319 208",
+    "email": "info@ondangwadesign.example",
+    "website": "https://example.com/ondangwa-design",
+    "image": "ondangwa-design.webp",
+    "membership": 2,
+    "category": "Creative Services",
+    "tagline": "Brand identity and print design for chambers, NGOs, and local retailers."
+  },
+  {
+    "name": "Karas Freight & Logistics",
+    "address": "44 Hosea Kutako Dr, Windhoek",
+    "phone": "+264 61 355 470",
+    "email": "info@karasfreight.example",
+    "website": "https://example.com/karas-freight",
+    "image": "karas-freight.webp",
+    "membership": 2,
+    "category": "Logistics",
+    "tagline": "Regional freight and warehousing connecting Windhoek to the coast."
+  }
+]
