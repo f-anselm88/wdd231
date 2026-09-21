@@ -1,6 +1,33 @@
 @media (min-width: 700px) {
   h1 { font-size: 2.6rem; }
 
+  .hero {
+    display: grid;
+  }
+
+  .hero-image {
+    grid-area: 1 / 1;
+    height: 60vh;
+    min-height: 22rem;
+  }
+
+  .hero-content {
+    grid-area: 1 / 1;
+    align-self: end;
+    max-width: var(--content-max);
+    margin-inline: auto;
+    width: 100%;
+    background-color: rgba(18, 38, 47, 0.88);
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .content-columns {
+    grid-template-columns: 1.6fr 1fr;
+  }
+
   .header-inner {
     padding-block: 1.1rem;
   }

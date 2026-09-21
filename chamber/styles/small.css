@@ -262,6 +262,178 @@ a:hover { color: var(--color-ochre-dark); }
   gap: 0.75rem;
 }
 
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: 46vh;
+  min-height: 16rem;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-content {
+  background-color: var(--color-indigo-dark);
+  color: var(--color-white);
+  padding: 1.5rem 1rem;
+}
+
+.hero-content h1 {
+  color: var(--color-white);
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  color: var(--color-line);
+  max-width: 46ch;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--color-ochre);
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.7rem 1.3rem;
+  border-radius: var(--radius);
+}
+
+.cta-button:hover {
+  background-color: var(--color-ochre-dark);
+  color: var(--color-white);
+}
+
+/* ---------- Content columns (events + weather) ---------- */
+.content-columns {
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding: 1.75rem 1rem 0;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.content-columns h2 {
+  margin-bottom: 0.85rem;
+}
+
+/* ---------- Events ---------- */
+.event-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.event-card {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 0.85rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: 0.85rem;
+}
+
+.event-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-sand-raised);
+  border-radius: var(--radius);
+  padding: 0.4rem 0;
+  color: var(--color-indigo-dark);
+}
+
+.event-day {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.event-month {
+  font-size: 0.75rem;
+}
+
+.event-body h3 {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.event-body p {
+  font-size: 0.88rem;
+  color: #504C42;
+}
+
+/* ---------- Weather ---------- */
+.weather {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: 1rem;
+  align-self: start;
+}
+
+.weather-current {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-line);
+  margin-bottom: 0.75rem;
+}
+
+.weather-temp {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--color-indigo-dark);
+  line-height: 1;
+}
+
+.weather-desc {
+  font-size: 0.88rem;
+  color: #504C42;
+  text-transform: capitalize;
+}
+
+.weather-forecast {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.forecast-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  color: #504C42;
+}
+
+.forecast-temp {
+  font-weight: 600;
+  color: var(--color-indigo-dark);
+}
+
+/* ---------- Spotlights ---------- */
+.spotlights {
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding: 1.75rem 1rem 3rem;
+}
+
+.spotlights h2 {
+  margin-bottom: 0.85rem;
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   background-color: var(--color-indigo-dark);
