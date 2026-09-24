@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community &amp; Culture — Rukwangali Phrasebook</title>
+  <meta name="description" content="Learn about Kavango culture and get in touch or suggest a phrase for the Rukwangali phrasebook.">
+  <meta name="author" content="Anselm Munango">
+
+  <meta property="og:title" content="Community & Culture — Rukwangali Phrasebook">
+  <meta property="og:description" content="Learn about Kavango culture and get in touch or suggest a phrase.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌾</text></svg>">
+
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/phrasebook.css">
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/form.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="site-title">Rukwangali <span>Phrasebook</span></p>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+        Menu ☰
+      </button>
+    </div>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul id="primary-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="phrasebook.html">Phrasebook</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Community &amp; culture</h1>
+
+    <div class="two-col">
+      <div class="info-block">
+        <h2>Life along the river</h2>
+        <p>The Kavango region sits along the Kavango River in northeastern Namibia, bordering Angola. Many
+          Vakwangali communities live close to the river, where fishing, farming, and fetching water are part
+          of daily life — which is why so many everyday Rukwangali phrases reference water, baskets, and the land.</p>
+      </div>
+      <div class="info-block">
+        <h2>Oral tradition</h2>
+        <p>Proverbs carry a lot of weight in Rukwangali-speaking communities — a short saying can settle an
+          argument or gently correct a child faster than a long lecture. A few are included in the
+          <a href="phrasebook.html">phrasebook</a>, under the "proverbs" filter.</p>
+      </div>
+    </div>
+
+    <section>
+      <h2>Suggest a phrase or get in touch</h2>
+      <p>Know a phrase that should be added, or have a question about the project? Send a note below.</p>
+
+      <form id="contact-form" class="contact-form">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+
+        <div>
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic" required>
+            <option value="">Choose one</option>
+            <option value="suggest-phrase">Suggest a phrase</option>
+            <option value="correction">Report a correction</option>
+            <option value="general">General question</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="current-year"></span> Anselm Munango. Built for WDD 231.</p>
+      <p><a href="attributions.html">Attributions</a></p>
+      <p><a href="#">Video demonstration</a> (link to be added)</p>
+    </div>
+  </footer>
+
+</body>
+</html>

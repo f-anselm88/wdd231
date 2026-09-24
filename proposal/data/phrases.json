@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "rukwangali": "Ngapi tupu?",
+    "english": "How's it going?",
+    "category": "greetings",
+    "usageNote": "A relaxed, everyday greeting used between friends and age-mates, similar in tone to \"what's up?\" in English."
+  },
+  {
+    "id": 2,
+    "rukwangali": "Ame kwa hepa",
+    "english": "I am fine",
+    "category": "greetings",
+    "usageNote": "The standard reply to a greeting. Polite in nearly every setting, from family to strangers."
+  },
+  {
+    "id": 3,
+    "rukwangali": "Ngapi edina lyoge?",
+    "english": "What is your name?",
+    "category": "greetings",
+    "usageNote": "Used when meeting someone for the first time; a natural follow-up after the initial greeting."
+  },
+  {
+    "id": 4,
+    "rukwangali": "Ndi hepa kutunga",
+    "english": "I am learning",
+    "category": "greetings",
+    "usageNote": "A humble way to explain you're still picking up the language when someone speaks quickly."
+  },
+  {
+    "id": 5,
+    "rukwangali": "Tu lye",
+    "english": "Let's eat",
+    "category": "daily-life",
+    "usageNote": "Called out to invite family or guests to the table; refusing a meal invitation is considered impolite."
+  },
+  {
+    "id": 6,
+    "rukwangali": "Ame nina fira mema",
+    "english": "I want water",
+    "category": "daily-life",
+    "usageNote": "A direct, practical request. Useful phrase for a guest to know in any household."
+  },
+  {
+    "id": 7,
+    "rukwangali": "Ngapi ezuva?",
+    "english": "What is the time?",
+    "category": "daily-life",
+    "usageNote": "Literally references the sun's position; a reminder that time was traditionally tracked by daylight."
+  },
+  {
+    "id": 8,
+    "rukwangali": "Ame kuna zuvhu",
+    "english": "I am tired",
+    "category": "daily-life",
+    "usageNote": "Common after farm work or a long walk; often followed by an offer to rest or sit."
+  },
+  {
+    "id": 9,
+    "rukwangali": "Tu ka lire mema",
+    "english": "Let's go fetch water",
+    "category": "daily-life",
+    "usageNote": "Reflects daily life near the Kavango River, where fetching water is still a shared household task."
+  },
+  {
+    "id": 10,
+    "rukwangali": "Mama gwange",
+    "english": "My mother",
+    "category": "family",
+    "usageNote": "Elders are addressed with warmth and respect; family terms are used often even for close non-relatives."
+  },
+  {
+    "id": 11,
+    "rukwangali": "Tate gwange",
+    "english": "My father",
+    "category": "family",
+    "usageNote": "Also used respectfully toward older men in the community, not only a biological father."
+  },
+  {
+    "id": 12,
+    "rukwangali": "Munazinyethu",
+    "english": "My sibling",
+    "category": "family",
+    "usageNote": "A single term covers brothers and sisters; context or a name usually clarifies which."
+  },
+  {
+    "id": 13,
+    "rukwangali": "Vakurona vange",
+    "english": "My elders",
+    "category": "family",
+    "usageNote": "Used to speak respectfully about parents, grandparents, or community elders collectively."
+  },
+  {
+    "id": 14,
+    "rukwangali": "Zimwe",
+    "english": "One",
+    "category": "numbers",
+    "usageNote": "The base counting word; Rukwangali numbers beyond ten often borrow structure from Bantu number systems."
+  },
+  {
+    "id": 15,
+    "rukwangali": "Vali",
+    "english": "Two",
+    "category": "numbers",
+    "usageNote": "Used both for counting objects and people."
+  },
+  {
+    "id": 16,
+    "rukwangali": "Vatatu",
+    "english": "Three",
+    "category": "numbers",
+    "usageNote": "Follows the same counting pattern as \"vali\"; useful when bargaining at a local market."
+  },
+  {
+    "id": 17,
+    "rukwangali": "Kambungu kamwe hamu kanyata mema gendji",
+    "english": "One small basket does not hold much water",
+    "category": "proverbs",
+    "usageNote": "A saying about limits and preparation — used to caution against under-preparing for a task."
+  },
+  {
+    "id": 18,
+    "rukwangali": "Mbudi zongwa kapi zi hepa mbili",
+    "english": "Good news does not need to be repeated twice",
+    "category": "proverbs",
+    "usageNote": "Suggests that truth and good conduct speak for themselves without needing to be forced."
+  }
+]

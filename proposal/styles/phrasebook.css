@@ -1,0 +1,182 @@
+/* ===========================================================
+   Phrasebook cards, filters, modal, and form styling
+   =========================================================== */
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  background: var(--color-sand-light);
+  border: 1px solid var(--color-river);
+  color: var(--color-river);
+  border-radius: var(--radius);
+  padding: 0.45rem 0.9rem;
+  font-size: 0.9rem;
+}
+
+.filter-btn:hover,
+.filter-btn:focus-visible {
+  background: var(--color-river);
+  color: var(--color-sand-light);
+}
+
+.filter-btn[aria-pressed="true"] {
+  background: var(--color-ochre);
+  border-color: var(--color-ochre);
+  color: #fff;
+}
+
+.phrase-count {
+  font-size: 0.9rem;
+  color: var(--color-river);
+  margin-bottom: 1rem;
+}
+
+.phrase-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 38rem) {
+  .phrase-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.phrase-card {
+  background: var(--color-sand-light);
+  border-left: 4px solid var(--color-ochre);
+  padding: 1rem 1.1rem;
+  text-align: left;
+  width: 100%;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.phrase-card:hover,
+.phrase-card:focus-visible {
+  background: #fff;
+  border-left-color: var(--color-river);
+}
+
+.phrase-card .rukwangali {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--color-river);
+  margin: 0 0 0.15rem;
+}
+
+.phrase-card .english {
+  margin: 0 0 0.4rem;
+  color: var(--color-ink);
+}
+
+.phrase-card .category-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--color-ochre-dark);
+  text-transform: lowercase;
+  border: 1px solid var(--color-gold);
+  border-radius: var(--radius);
+  padding: 0.1rem 0.5rem;
+}
+
+/* ---- Modal (<dialog>) ---- */
+dialog#phrase-modal {
+  border: none;
+  border-top: 6px solid var(--color-ochre);
+  border-radius: var(--radius);
+  max-width: 32rem;
+  width: 90%;
+  padding: 1.75rem;
+  background: var(--color-sand-light);
+  color: var(--color-ink);
+}
+
+dialog#phrase-modal::backdrop {
+  background: rgba(20, 51, 47, 0.65);
+}
+
+dialog#phrase-modal h2 {
+  margin-top: 0;
+}
+
+.modal-close {
+  background: var(--color-river);
+  color: var(--color-sand-light);
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+.modal-close:hover,
+.modal-close:focus-visible {
+  background: var(--color-river-dark);
+}
+
+/* ---- Form ---- */
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 32rem;
+  margin-top: 1.5rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: var(--color-river);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--color-river);
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.contact-form button[type="submit"] {
+  justify-self: start;
+  background: var(--color-ochre);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.65rem 1.4rem;
+  font-size: 1rem;
+}
+
+.contact-form button[type="submit"]:hover,
+.contact-form button[type="submit"]:focus-visible {
+  background: var(--color-ochre-dark);
+}
+
+/* ---- Form action / results page ---- */
+.submission-summary {
+  background: var(--color-sand-light);
+  border-left: 4px solid var(--color-river);
+  padding: 1rem 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.submission-summary dt {
+  font-weight: 600;
+  color: var(--color-river);
+  margin-top: 0.6rem;
+}
+
+.submission-summary dd {
+  margin: 0 0 0.3rem;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Received — Rukwangali Phrasebook</title>
+  <meta name="description" content="Confirmation page showing the message just submitted on the community page.">
+  <meta name="author" content="Anselm Munango">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌾</text></svg>">
+
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/phrasebook.css">
+  <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="site-title">Rukwangali <span>Phrasebook</span></p>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+        Menu ☰
+      </button>
+    </div>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul id="primary-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="phrasebook.html">Phrasebook</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Thanks — message received</h1>
+    <p>Here's what was submitted:</p>
+
+    <dl class="submission-summary" id="summary">
+      <!-- filled in by the inline module script below -->
+    </dl>
+
+    <p><a href="community.html">&larr; Back to community page</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="current-year"></span> Anselm Munango. Built for WDD 231.</p>
+      <p><a href="attributions.html">Attributions</a></p>
+      <p><a href="#">Video demonstration</a> (link to be added)</p>
+    </div>
+  </footer>
+
+  <script type="module">
+    const summary = document.querySelector('#summary');
+    const raw = localStorage.getItem('latest-submission');
+
+    if (raw) {
+      const entry = JSON.parse(raw);
+      summary.innerHTML = `
+        <dt>Name</dt><dd>${entry.name}</dd>
+        <dt>Email</dt><dd>${entry.email}</dd>
+        <dt>Topic</dt><dd>${entry.topic}</dd>
+        <dt>Message</dt><dd>${entry.message}</dd>
+        <dt>Submitted</dt><dd>${entry.submittedAt}</dd>
+      `;
+    } else {
+      summary.innerHTML = `<p>No recent submission found. <a href="community.html">Fill out the form</a> first.</p>`;
+    }
+  </script>
+</body>
+</html>
