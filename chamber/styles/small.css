@@ -30,6 +30,8 @@
   --color-badge-silver-bg: #E7EBEC;
   --color-badge-gold-bg: #F3E7CB;
 
+  --none: none;
+
   --font-display: 'Fraunces', 'Iowan Old Style', 'Georgia', serif;
   --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
 
@@ -103,7 +105,7 @@ a:hover { color: var(--color-ochre-dark); }
 }
 
 .nav-toggle {
-  background: none;
+  background: var(--none);
   border: 1px solid var(--overlay-light-40);
   border-radius: var(--radius);
   padding: 0.4rem 0.6rem;
@@ -179,7 +181,7 @@ a:hover { color: var(--color-ochre-dark); }
 
 .view-toggle button {
   background-color: var(--color-white);
-  border: none;
+  border: var(--none);
   padding: 0.5rem 0.9rem;
   font-size: 0.9rem;
   color: var(--color-indigo-dark);
@@ -521,7 +523,7 @@ a:hover { color: var(--color-ochre-dark); }
 }
 
 .join-form .cta-button {
-  border: none;
+  border: var(--none);
   justify-self: start;
   font: inherit;
 }
@@ -576,8 +578,8 @@ a:hover { color: var(--color-ochre-dark); }
 }
 
 .level-link {
-  background: none;
-  border: none;
+  background: var(--none);
+  border: var(--none);
   color: var(--color-indigo);
   font: inherit;
   font-weight: 600;
@@ -592,7 +594,7 @@ a:hover { color: var(--color-ochre-dark); }
 
 /* ---------- Membership benefit modals ---------- */
 .level-modal {
-  border: none;
+  border: var(--none);
   border-radius: var(--radius);
   padding: 1.5rem;
   max-width: 32rem;
@@ -621,7 +623,7 @@ a:hover { color: var(--color-ochre-dark); }
 .modal-close {
   background-color: var(--color-indigo-dark);
   color: var(--color-white);
-  border: none;
+  border: var(--none);
   border-radius: var(--radius);
   padding: 0.5rem 1rem;
   font: inherit;

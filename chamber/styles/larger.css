@@ -48,7 +48,7 @@
   }
 
   .primary-nav a {
-    border-bottom: none;
+    border-bottom: var(--none);
     padding: 0.2rem 0;
     position: relative;
   }
