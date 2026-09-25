@@ -69,6 +69,50 @@ a:hover { color: var(--color-ochre-dark); }
   outline-offset: 2px;
 }
 
+/* ---------- Shared page-width container ---------- */
+.header-inner,
+.page-intro,
+.directory-controls,
+.directory,
+.content-columns,
+.spotlights,
+.footer-inner,
+.join-layout,
+.application-summary {
+  max-width: var(--content-max);
+  margin-inline: auto;
+}
+
+/* ---------- Shared bordered card surface ---------- */
+.view-toggle,
+.member-card,
+.event-card,
+.weather,
+.join-form,
+.level-card,
+.summary-list {
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+}
+
+.member-card,
+.event-card,
+.weather,
+.join-form,
+.level-card,
+.summary-list {
+  background-color: var(--color-white);
+}
+
+/* ---------- Shared muted small text ---------- */
+.member-card address,
+.event-body p,
+.weather-desc,
+.level-card p {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+}
+
 /* ---------- Header ---------- */
 .site-header {
   background-color: var(--color-indigo-dark);
@@ -77,8 +121,6 @@ a:hover { color: var(--color-ochre-dark); }
 }
 
 .header-inner {
-  max-width: var(--content-max);
-  margin-inline: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -151,8 +193,6 @@ a:hover { color: var(--color-ochre-dark); }
 
 /* ---------- Page intro ---------- */
 .page-intro {
-  max-width: var(--content-max);
-  margin-inline: auto;
   padding: 1.75rem 1rem 1rem;
 }
 
@@ -162,8 +202,6 @@ a:hover { color: var(--color-ochre-dark); }
 
 /* ---------- View controls ---------- */
 .directory-controls {
-  max-width: var(--content-max);
-  margin-inline: auto;
   padding: 0 1rem 1rem;
   display: flex;
   align-items: center;
@@ -174,8 +212,6 @@ a:hover { color: var(--color-ochre-dark); }
 
 .view-toggle {
   display: inline-flex;
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius);
   overflow: hidden;
 }
 
@@ -203,8 +239,6 @@ a:hover { color: var(--color-ochre-dark); }
 
 /* ---------- Member directory ---------- */
 .directory {
-  max-width: var(--content-max);
-  margin-inline: auto;
   padding: 0 1rem 3rem;
 }
 
@@ -233,9 +267,6 @@ a:hover { color: var(--color-ochre-dark); }
 }
 
 .member-card {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius);
   padding: 1rem;
 }
 
@@ -260,14 +291,11 @@ a:hover { color: var(--color-ochre-dark); }
   margin-bottom: 0.4rem;
 }
 
-.tier-1 { background-color: var(--color-sand-raised); color: var(--color-text-faint); }
 .tier-2 { background-color: var(--color-badge-silver-bg); color: var(--color-silver); }
 .tier-3 { background-color: var(--color-badge-gold-bg); color: var(--color-gold); }
 
 .member-card address {
   font-style: normal;
-  font-size: 0.88rem;
-  color: var(--color-text-muted);
 }
 
 .member-card .member-links {
@@ -325,15 +353,9 @@ a:hover { color: var(--color-ochre-dark); }
 
 /* ---------- Content columns (events + weather) ---------- */
 .content-columns {
-  max-width: var(--content-max);
-  margin-inline: auto;
   padding: 1.75rem 1rem 0;
   display: grid;
   gap: 1.5rem;
-}
-
-.content-columns h2 {
-  margin-bottom: 0.85rem;
 }
 
 /* ---------- Events ---------- */
@@ -348,9 +370,6 @@ a:hover { color: var(--color-ochre-dark); }
   display: grid;
   grid-template-columns: 3.5rem 1fr;
   gap: 0.85rem;
-  background-color: var(--color-white);
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius);
   padding: 0.85rem;
 }
 
@@ -381,16 +400,9 @@ a:hover { color: var(--color-ochre-dark); }
   margin-bottom: 0.2rem;
 }
 
-.event-body p {
-  font-size: 0.88rem;
-  color: var(--color-text-muted);
-}
 
 /* ---------- Weather ---------- */
 .weather {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius);
   padding: 1rem;
   align-self: start;
 }
@@ -412,8 +424,6 @@ a:hover { color: var(--color-ochre-dark); }
 }
 
 .weather-desc {
-  font-size: 0.88rem;
-  color: var(--color-text-muted);
   text-transform: capitalize;
 }
 
@@ -440,13 +450,7 @@ a:hover { color: var(--color-ochre-dark); }
 
 /* ---------- Spotlights ---------- */
 .spotlights {
-  max-width: var(--content-max);
-  margin-inline: auto;
   padding: 1.75rem 1rem 3rem;
-}
-
-.spotlights h2 {
-  margin-bottom: 0.85rem;
 }
 
 /* ---------- Footer ---------- */
@@ -456,8 +460,6 @@ a:hover { color: var(--color-ochre-dark); }
 }
 
 .footer-inner {
-  max-width: var(--content-max);
-  margin-inline: auto;
   padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
@@ -471,8 +473,6 @@ a:hover { color: var(--color-ochre-dark); }
 
 /* ---------- Join layout ---------- */
 .join-layout {
-  max-width: var(--content-max);
-  margin-inline: auto;
   padding: 0 1rem 3rem;
   display: grid;
   gap: 1.5rem;
@@ -480,16 +480,15 @@ a:hover { color: var(--color-ochre-dark); }
 
 /* ---------- Application form ---------- */
 .join-form-section h2,
-.membership-levels h2 {
+.membership-levels h2,
+.content-columns h2,
+.spotlights h2 {
   margin-bottom: 0.85rem;
 }
 
 .join-form {
   display: grid;
   gap: 1rem;
-  background-color: var(--color-white);
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius);
   padding: 1.25rem;
 }
 
@@ -535,9 +534,6 @@ a:hover { color: var(--color-ochre-dark); }
 }
 
 .level-card {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius);
   padding: 1rem;
   border-top: 4px solid var(--color-line);
   opacity: 0;
@@ -572,8 +568,6 @@ a:hover { color: var(--color-ochre-dark); }
 }
 
 .level-card p {
-  font-size: 0.88rem;
-  color: var(--color-text-muted);
   margin-bottom: 0.6rem;
 }
 
@@ -636,15 +630,10 @@ a:hover { color: var(--color-ochre-dark); }
 
 /* ---------- Application summary (thank you page) ---------- */
 .application-summary {
-  max-width: var(--content-max);
-  margin-inline: auto;
   padding: 0 1rem 3rem;
 }
 
 .summary-list {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius);
   padding: 1.25rem;
   display: grid;
   gap: 0.75rem;
