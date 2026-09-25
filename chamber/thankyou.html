@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Thank You | Windhoek Chamber of Commerce</title>
+
+  <meta
+    name="description"
+    content="Thank you for applying for membership with the Windhoek Chamber of Commerce."
+  >
+
+  <meta name="author" content="Anselm Munango">
+
+  <meta property="og:title" content="Thank You | Windhoek Chamber of Commerce">
+  <meta property="og:description" content="Thank you for applying for membership with the Windhoek Chamber of Commerce.">
+  <meta property="og:image" content="https://f-anselm88.github.io/wdd231/chamber/images/og-image.png">
+  <meta property="og:url" content="https://f-anselm88.github.io/wdd231/chamber/thankyou.html">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JavaScript -->
+  <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <div class="header-inner">
+
+      <a href="index.html" class="wordmark">
+        <span class="wordmark-mark">Windhoek</span>
+        <span class="wordmark-sub">Chamber of Commerce</span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-expanded="false"
+        aria-controls="primaryNav"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <nav class="primary-nav" id="primaryNav">
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" aria-current="page">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+
+    </nav>
+
+  </header>
+
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <section class="page-intro">
+      <h1>Thank You</h1>
+      <p>
+        Thank you for applying to the Windhoek Chamber of Commerce. A member
+        of our team will review your application and be in touch shortly.
+      </p>
+    </section>
+
+    <section class="application-summary" aria-labelledby="summaryHeading">
+
+      <h2 id="summaryHeading">Application Summary</h2>
+
+      <dl class="summary-list">
+
+        <div class="summary-row">
+          <dt>Name</dt>
+          <dd id="summaryName"></dd>
+        </div>
+
+        <div class="summary-row">
+          <dt>Email</dt>
+          <dd id="summaryEmail"></dd>
+        </div>
+
+        <div class="summary-row">
+          <dt>Mobile Phone</dt>
+          <dd id="summaryPhone"></dd>
+        </div>
+
+        <div class="summary-row">
+          <dt>Business/Organization</dt>
+          <dd id="summaryOrg"></dd>
+        </div>
+
+        <div class="summary-row">
+          <dt>Submitted</dt>
+          <dd id="summaryTimestamp"></dd>
+        </div>
+
+      </dl>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-contact">
+        <h2>Windhoek Chamber of Commerce</h2>
+        <p>14 Independence Ave<br>Windhoek, Namibia</p>
+        <p>Phone: +264 61 000 0000</p>
+        <p>Email: info@windhoekchamber.com</p>
+      </div>
+
+      <div class="footer-development">
+        <p>&copy; <span id="year"></span> Windhoek Chamber of Commerce</p>
+        <p>Anselm Munango &middot; WDD 231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>

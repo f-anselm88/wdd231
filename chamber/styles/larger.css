@@ -81,3 +81,14 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (min-width: 700px) {
+  .join-layout {
+    grid-template-columns: 1.6fr 1fr;
+    align-items: start;
+  }
+
+  .summary-row {
+    grid-template-columns: 12rem 1fr;
+  }
+}

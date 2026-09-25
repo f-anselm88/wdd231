@@ -453,3 +453,200 @@ a:hover { color: var(--color-ochre-dark); }
 .footer-inner a {
   color: var(--color-white);
 }
+
+/* ---------- Join layout ---------- */
+.join-layout {
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding: 0 1rem 3rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* ---------- Application form ---------- */
+.join-form-section h2,
+.membership-levels h2 {
+  margin-bottom: 0.85rem;
+}
+
+.join-form {
+  display: grid;
+  gap: 1rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.join-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-indigo-dark);
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: 0.55rem 0.6rem;
+  font-weight: 400;
+  color: var(--color-ink);
+  background-color: var(--color-sand);
+}
+
+.join-form input:invalid:not(:placeholder-shown) {
+  border-color: var(--color-ochre-dark);
+}
+
+.join-form textarea {
+  resize: vertical;
+  min-height: 5rem;
+}
+
+.join-form .cta-button {
+  border: none;
+  justify-self: start;
+  font: inherit;
+}
+
+/* ---------- Membership level cards ---------- */
+.level-cards {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.level-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: 1rem;
+  border-top: 4px solid var(--color-line);
+  opacity: 0;
+  transform: translateY(10px);
+  animation: level-card-in 0.5s ease-out forwards;
+}
+
+.level-card:nth-child(1) { animation-delay: 0.05s; }
+.level-card:nth-child(2) { animation-delay: 0.2s; }
+.level-card:nth-child(3) { animation-delay: 0.35s; }
+.level-card:nth-child(4) { animation-delay: 0.5s; }
+
+@keyframes level-card-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.level-np { border-top-color: var(--color-silver); }
+.level-bronze { border-top-color: #A9673A; }
+.level-silver { border-top-color: var(--color-silver); }
+.level-gold { border-top-color: var(--color-gold); }
+
+.level-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+}
+
+.level-card p {
+  font-size: 0.88rem;
+  color: #504C42;
+  margin-bottom: 0.6rem;
+}
+
+.level-link {
+  background: none;
+  border: none;
+  color: var(--color-indigo);
+  font: inherit;
+  font-weight: 600;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.level-link:hover {
+  color: var(--color-ochre-dark);
+}
+
+/* ---------- Membership benefit modals ---------- */
+.level-modal {
+  border: none;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  max-width: 32rem;
+  width: min(90vw, 32rem);
+  color: var(--color-ink);
+}
+
+.level-modal::backdrop {
+  background-color: rgba(18, 38, 47, 0.6);
+}
+
+.level-modal h2 {
+  margin-bottom: 0.6rem;
+}
+
+.level-modal ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+  color: #4A463D;
+}
+
+.modal-close {
+  background-color: var(--color-indigo-dark);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background-color: var(--color-indigo);
+}
+
+/* ---------- Application summary (thank you page) ---------- */
+.application-summary {
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding: 0 1rem 3rem;
+}
+
+.summary-list {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.summary-row {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: 1rem;
+}
+
+.summary-row dt {
+  font-weight: 600;
+  color: var(--color-indigo-dark);
+}
+
+.summary-row dd {
+  margin: 0;
+  color: #4A463D;
+}
