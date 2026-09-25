@@ -12,6 +12,7 @@
   --color-sand-raised: #EEE7D6;
   --color-ochre: #C97B3D;
   --color-ochre-dark: #A85F27;
+  --color-ochre-darker: #8B4E20;
   --color-gold: #B9902E;
   --color-silver: #6E7A80;
   --color-line: #DED5C0;
@@ -338,7 +339,7 @@ a:hover { color: var(--color-ochre-dark); }
 
 .cta-button {
   display: inline-block;
-  background-color: var(--color-ochre);
+  background-color: var(--color-ochre-dark);
   color: var(--color-white);
   text-decoration: none;
   font-weight: 600;
@@ -347,7 +348,7 @@ a:hover { color: var(--color-ochre-dark); }
 }
 
 .cta-button:hover {
-  background-color: var(--color-ochre-dark);
+  background-color: var(--color-ochre-darker);
   color: var(--color-white);
 }
 
