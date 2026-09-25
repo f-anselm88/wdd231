@@ -17,7 +17,7 @@
     max-width: var(--content-max);
     margin-inline: auto;
     width: 100%;
-    background-color: rgba(18, 38, 47, 0.88);
+    background-color: var(--overlay-dark-88);
   }
 
   .hero-content h1 {

@@ -16,6 +16,19 @@
   --color-silver: #6E7A80;
   --color-line: #DED5C0;
   --color-white: #FFFFFF;
+  --color-bronze: #A9673A;
+
+  --color-text-body: #4A463D;
+  --color-text-muted: #504C42;
+  --color-text-faint: #6B6659;
+
+  --overlay-dark-60: rgba(18, 38, 47, 0.6);
+  --overlay-dark-88: rgba(18, 38, 47, 0.88);
+  --overlay-light-12: rgba(255, 255, 255, 0.12);
+  --overlay-light-40: rgba(255, 255, 255, 0.4);
+
+  --color-badge-silver-bg: #E7EBEC;
+  --color-badge-gold-bg: #F3E7CB;
 
   --font-display: 'Fraunces', 'Iowan Old Style', 'Georgia', serif;
   --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
@@ -91,7 +104,7 @@ a:hover { color: var(--color-ochre-dark); }
 
 .nav-toggle {
   background: none;
-  border: 1px solid rgba(255,255,255,0.4);
+  border: 1px solid var(--overlay-light-40);
   border-radius: var(--radius);
   padding: 0.4rem 0.6rem;
   display: flex;
@@ -127,7 +140,7 @@ a:hover { color: var(--color-ochre-dark); }
   color: var(--color-white);
   text-decoration: none;
   padding: 0.6rem 0.2rem;
-  border-bottom: 1px solid rgba(255,255,255,0.12);
+  border-bottom: 1px solid var(--overlay-light-12);
 }
 
 .primary-nav a[aria-current="page"] {
@@ -142,7 +155,7 @@ a:hover { color: var(--color-ochre-dark); }
 }
 
 .page-intro p {
-  color: #4A463D;
+  color: var(--color-text-body);
 }
 
 /* ---------- View controls ---------- */
@@ -183,7 +196,7 @@ a:hover { color: var(--color-ochre-dark); }
 
 .member-count {
   font-size: 0.9rem;
-  color: #6B6659;
+  color: var(--color-text-faint);
 }
 
 /* ---------- Member directory ---------- */
@@ -245,14 +258,14 @@ a:hover { color: var(--color-ochre-dark); }
   margin-bottom: 0.4rem;
 }
 
-.tier-1 { background-color: var(--color-sand-raised); color: #6B6659; }
-.tier-2 { background-color: #E7EBEC; color: var(--color-silver); }
-.tier-3 { background-color: #F3E7CB; color: var(--color-gold); }
+.tier-1 { background-color: var(--color-sand-raised); color: var(--color-text-faint); }
+.tier-2 { background-color: var(--color-badge-silver-bg); color: var(--color-silver); }
+.tier-3 { background-color: var(--color-badge-gold-bg); color: var(--color-gold); }
 
 .member-card address {
   font-style: normal;
   font-size: 0.88rem;
-  color: #504C42;
+  color: var(--color-text-muted);
 }
 
 .member-card .member-links {
@@ -368,7 +381,7 @@ a:hover { color: var(--color-ochre-dark); }
 
 .event-body p {
   font-size: 0.88rem;
-  color: #504C42;
+  color: var(--color-text-muted);
 }
 
 /* ---------- Weather ---------- */
@@ -398,7 +411,7 @@ a:hover { color: var(--color-ochre-dark); }
 
 .weather-desc {
   font-size: 0.88rem;
-  color: #504C42;
+  color: var(--color-text-muted);
   text-transform: capitalize;
 }
 
@@ -415,7 +428,7 @@ a:hover { color: var(--color-ochre-dark); }
   align-items: center;
   gap: 0.3rem;
   font-size: 0.85rem;
-  color: #504C42;
+  color: var(--color-text-muted);
 }
 
 .forecast-temp {
@@ -547,7 +560,7 @@ a:hover { color: var(--color-ochre-dark); }
 }
 
 .level-np { border-top-color: var(--color-silver); }
-.level-bronze { border-top-color: #A9673A; }
+.level-bronze { border-top-color: var(--color-bronze); }
 .level-silver { border-top-color: var(--color-silver); }
 .level-gold { border-top-color: var(--color-gold); }
 
@@ -558,7 +571,7 @@ a:hover { color: var(--color-ochre-dark); }
 
 .level-card p {
   font-size: 0.88rem;
-  color: #504C42;
+  color: var(--color-text-muted);
   margin-bottom: 0.6rem;
 }
 
@@ -588,7 +601,7 @@ a:hover { color: var(--color-ochre-dark); }
 }
 
 .level-modal::backdrop {
-  background-color: rgba(18, 38, 47, 0.6);
+  background-color: var(--overlay-dark-60);
 }
 
 .level-modal h2 {
@@ -602,7 +615,7 @@ a:hover { color: var(--color-ochre-dark); }
   flex-direction: column;
   gap: 0.35rem;
   margin-bottom: 1rem;
-  color: #4A463D;
+  color: var(--color-text-body);
 }
 
 .modal-close {
@@ -648,5 +661,5 @@ a:hover { color: var(--color-ochre-dark); }
 
 .summary-row dd {
   margin: 0;
-  color: #4A463D;
+  color: var(--color-text-body);
 }
