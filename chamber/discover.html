@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Discover Windhoek | Windhoek Chamber of Commerce</title>
+
+  <meta
+    name="description"
+    content="Explore landmarks, markets, and dining in Windhoek, Namibia, and see why the city is a strong home for business."
+  >
+
+  <meta name="author" content="Anselm Munango">
+
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta
+    property="og:title"
+    content="Discover Windhoek | Windhoek Chamber of Commerce"
+  >
+
+  <meta
+    property="og:description"
+    content="Explore landmarks, markets, and dining in Windhoek, Namibia."
+  >
+
+  <meta
+    property="og:image"
+    content="https://f-anselm88.github.io/wdd231/chamber/images/og-image.png"
+  >
+
+  <meta
+    property="og:url"
+    content="https://f-anselm88.github.io/wdd231/chamber/discover.html"
+  >
+
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/discover.css">
+
+  <!-- JavaScript (module so it can import data/discover.mjs; modules defer automatically) -->
+  <script src="scripts/discover.js" type="module"></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <div class="header-inner">
+
+      <a href="index.html" class="wordmark">
+        <span class="wordmark-mark">Windhoek</span>
+        <span class="wordmark-sub">Chamber of Commerce</span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-expanded="false"
+        aria-controls="primaryNav"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <nav class="primary-nav" id="primaryNav">
+
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li>
+          <a href="directory.html">Directory</a>
+        </li>
+
+        <li>
+          <a href="join.html">Join</a>
+        </li>
+
+        <li>
+          <a href="discover.html" aria-current="page">Discover</a>
+        </li>
+      </ul>
+
+    </nav>
+
+  </header>
+
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <section class="page-intro">
+
+      <h1>Discover Windhoek</h1>
+
+      <p>
+        Landmarks, markets, and places to meet in the heart of Namibia's
+        capital, all within reach of the Chamber's member businesses.
+      </p>
+
+    </section>
+
+    <!-- Visit message (localStorage) -->
+    <div id="visitMessage" class="visit-message" role="status" hidden></div>
+
+    <!-- Discover cards -->
+    <section class="discover" aria-label="Places of interest in Windhoek">
+      <div class="discover-grid" id="discoverGrid"></div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-contact">
+        <h2>Windhoek Chamber of Commerce</h2>
+
+        <p>
+          14 Independence Ave<br>
+          Windhoek, Namibia
+        </p>
+
+        <p>
+          Phone: +264 61 000 0000
+        </p>
+
+        <p>
+          Email: info@windhoekchamber.com
+        </p>
+      </div>
+
+      <div class="footer-development">
+
+        <p>
+          &copy;
+          <span id="year"></span>
+          Windhoek Chamber of Commerce
+        </p>
+
+        <p>
+          Anselm Munango &middot; WDD 231
+        </p>
+
+        <p>
+          Last Modified:
+          <span id="lastModified"></span>
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
