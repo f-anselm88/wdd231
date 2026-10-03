@@ -1,63 +1,94 @@
 @media (min-width: 700px) {
-  header {
-    padding: 1rem 2rem;
+  h1 { font-size: 2.6rem; }
+
+  .hero {
+    display: grid;
+  }
+
+  .hero-image {
+    grid-area: 1 / 1;
+    height: 60vh;
+    min-height: 22rem;
+  }
+
+  .hero-content {
+    grid-area: 1 / 1;
+    align-self: end;
+    max-width: var(--content-max);
+    margin-inline: auto;
+    width: 100%;
+    background-color: var(--overlay-dark-88);
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .content-columns {
+    grid-template-columns: 1.6fr 1fr;
+  }
+
+  .header-inner {
+    padding-block: 1.1rem;
   }
 
   .nav-toggle {
     display: none;
   }
 
-  #primary-nav {
-    display: flex;
+  .primary-nav {
+    display: block;
+    width: auto;
+    padding-bottom: 0;
+  }
+
+  .primary-nav ul {
     flex-direction: row;
-    justify-content: center;
+    gap: 1.5rem;
   }
 
-  #primary-nav a {
-    border-bottom: 3px solid transparent;
-    transition: background-color 0.15s ease;
+  .primary-nav a {
+    border-bottom: var(--none);
+    padding: 0.2rem 0;
+    position: relative;
   }
 
-  #primary-nav a:hover {
-    background: rgba(255, 255, 255, 0.08);
+  .primary-nav a[aria-current="page"]::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 2px;
+    background-color: var(--color-ochre);
   }
 
-  #primary-nav a[aria-current="page"] {
-    border-bottom-color: var(--accent);
+  .member-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem;
+  .member-list.is-list {
+    grid-template-columns: 1fr;
   }
+}
 
-  .intro-row {
-    flex-direction: row;
-    align-items: stretch;
-  }
-
-  .about-me {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about-me p {
-    flex: 1;
-  }
-
-  .student-photo {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .student-photo img {
-    flex: 1;
-  }
-
-  .course-list {
+@media (min-width: 980px) {
+  .member-list {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .member-list.is-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 700px) {
+  .join-layout {
+    grid-template-columns: 1.6fr 1fr;
+    align-items: start;
+  }
+
+  .summary-row {
+    grid-template-columns: 12rem 1fr;
   }
 }
