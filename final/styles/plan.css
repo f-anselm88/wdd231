@@ -1,0 +1,51 @@
+/* Namibia Compass - Plan a Trip page: trip form and saved list */
+
+fieldset {
+  margin: 0;
+  padding: 0.75rem 1rem 1rem;
+  border: 2px solid var(--ink-soft);
+  border-radius: 0.5rem;
+}
+
+.choice-group {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.hint {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.plan-layout {
+  display: grid;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.form {
+  display: grid;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.saved-panel {
+  align-self: start;
+  padding: 1.25rem;
+  background: var(--sand-deep);
+  border-radius: var(--radius);
+}
+
+.saved-list {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
+
+@media (width >= 48em) {
+  .plan-layout {
+    grid-template-columns: 1.6fr 1fr;
+  }
+}

@@ -1,0 +1,10 @@
+/* Namibia Compass - Attributions page: readable column of credits */
+
+.credits {
+  max-width: 46rem;
+  margin-inline: 0;
+}
+
+.credits section + section {
+  margin-top: 1.5rem;
+}

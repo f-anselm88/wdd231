@@ -4,32 +4,83 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Attributions | Namibia Compass</title>
-  <meta name="description" content="Credits and resources for the Namibia Compass website.">
+  <meta name="description" content="Credits for the images, fonts, code and content used on the Namibia Compass website.">
   <meta name="author" content="Anselm Munango">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Namibia Compass">
+  <meta property="og:title" content="Attributions | Namibia Compass">
+  <meta property="og:description" content="Credits for the images, fonts, code and content used on the Namibia Compass website.">
+  <meta property="og:url" content="https://f-anselm88.github.io/wdd231/final/attributions.html">
+  <meta property="og:image" content="https://f-anselm88.github.io/wdd231/final/images/og-cover.png">
+  <meta property="og:image:alt" content="Namibia Compass over a stylised desert landscape">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/attributions.css">
+  <script type="module" src="scripts/nav.js"></script>
 </head>
 <body>
-  <main>
-    <h1>Attributions</h1>
-    <p><a href="index.html">Back to Namibia Compass</a></p>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-bar">
+      <a class="brand" href="index.html">
+        <img src="images/favicon.svg" alt="" width="32" height="32">
+        <span>Namibia Compass</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">&#9776;</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="plan.html">Plan a Trip</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-title container">
+      <h1>Attributions</h1>
+      <p>Credits for the images, fonts, code and content used on this site.</p>
+    </section>
 
-    <h2>Images</h2>
-    <p>All destination illustrations, the favicon and the social sharing image are original vector artwork created by Anselm Munango for this project. No third-party photographs are used.</p>
+    <div class="section container credits">
+      <section aria-labelledby="images-heading">
+        <h2 id="images-heading">Images</h2>
+        <p>The destination images are JPG images supplied by the author for this project. The favicon and the social sharing image are original artwork created by Anselm Munango.</p>
+      </section>
 
-    <h2>Code and fonts</h2>
-    <p>The site uses plain HTML, CSS and JavaScript. No frameworks, templates or libraries are used, and text is set in the visitor's system fonts.</p>
+      <section aria-labelledby="fonts-heading">
+        <h2 id="fonts-heading">Fonts</h2>
+        <p>Headings use <a href="https://fonts.google.com/specimen/Lora">Lora</a> and body text uses <a href="https://fonts.google.com/specimen/Source+Sans+3">Source Sans 3</a>, both served by Google Fonts under the SIL Open Font License.</p>
+      </section>
 
-    <h2>Content</h2>
-    <p>Destination descriptions were written in the author's own words from publicly available information about Namibia. Twyfelfontein's World Heritage status is recorded by the <a href="https://whc.unesco.org/">UNESCO World Heritage Centre</a>.</p>
+      <section aria-labelledby="code-heading">
+        <h2 id="code-heading">Code</h2>
+        <p>The site is built with plain HTML, CSS and JavaScript. No frameworks, templates or libraries are used.</p>
+      </section>
 
-    <h2>Further reading</h2>
-    <ul>
-      <li><a href="https://www.namibiatourism.com.na/">Namibia Tourism Board</a> for current visitor information</li>
-      <li><a href="https://whc.unesco.org/">UNESCO World Heritage Centre</a></li>
-    </ul>
+      <section aria-labelledby="content-heading">
+        <h2 id="content-heading">Content</h2>
+        <p>Destination descriptions were written in the author's own words from publicly available information about Namibia. Twyfelfontein's World Heritage status is recorded by the <a href="https://whc.unesco.org/">UNESCO World Heritage Centre</a>. For current visitor information, see the <a href="https://www.namibiatourism.com.na/">Namibia Tourism Board</a>.</p>
+      </section>
 
-    <h2>Course</h2>
-    <p>Built for WDD 231: Web Frontend Development at Brigham Young University-Idaho.</p>
+      <section aria-labelledby="course-heading">
+        <h2 id="course-heading">Course</h2>
+        <p>Built for WDD 231: Web Frontend Development at Brigham Young University-Idaho.</p>
+      </section>
+    </div>
   </main>
+  <footer class="site-footer">
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="https://youtu.be/vrxEmib9A-k" target="_blank" rel="noopener">Project demo video<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        <li><a href="attributions.html">Attributions</a></li>
+      </ul>
+      <p>&copy; <span id="year">2026</span> Anselm Munango &middot; WDD 231 final project &middot; Namibia</p>
+    </div>
+  </footer>
 </body>
 </html>

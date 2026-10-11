@@ -1,0 +1,67 @@
+/* Namibia Compass - Home page: hero and how-it-works steps */
+
+.hero {
+  padding: 3rem 0;
+  background: linear-gradient(135deg, var(--clay-dark), var(--clay));
+  color: var(--white);
+}
+
+.hero-grid {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero p {
+  max-width: 40rem;
+  font-size: 1.125rem;
+}
+
+.hero-image {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.hero .button {
+  color: var(--ink);
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+.hero .button:hover {
+  color: var(--ink);
+  background: var(--white);
+}
+
+.section-alt {
+  background: var(--sand-deep);
+}
+
+.steps {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.steps li {
+  padding: 1.25rem;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+@media (width >= 48em) {
+  .hero {
+    padding: 4.5rem 0;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,30 @@
+/* Namibia Compass - Form action page: submitted details summary */
+
+.summary {
+  display: grid;
+  gap: 0.25rem 1rem;
+  margin: 0 0 2rem;
+  padding: 1.25rem;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.summary dt {
+  font-weight: 700;
+}
+
+.summary dd {
+  margin: 0 0 0.75rem;
+  overflow-wrap: anywhere;
+}
+
+@media (width >= 48em) {
+  .summary {
+    grid-template-columns: max-content 1fr;
+  }
+
+  .summary dd {
+    margin: 0;
+  }
+}
