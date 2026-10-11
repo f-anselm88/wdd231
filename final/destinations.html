@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Destinations | Namibia Compass</title>
+  <meta name="description" content="Browse 18 Namibian destinations. Filter by category, search by name, sort by budget and save your favourites.">
+  <meta name="author" content="Anselm Munango">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Namibia Compass">
+  <meta property="og:title" content="Destinations | Namibia Compass">
+  <meta property="og:description" content="Browse 18 Namibian destinations. Filter by category, search by name, sort by budget and save your favourites.">
+  <meta property="og:url" content="https://f-anselm88.github.io/wdd231/final/destinations.html">
+  <meta property="og:image" content="https://f-anselm88.github.io/wdd231/final/images/og-cover.png">
+  <meta property="og:image:alt" content="Namibia Compass over a stylised desert landscape">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-bar">
+      <a class="brand" href="index.html">
+        <img src="images/favicon.svg" alt="" width="32" height="32">
+        <span>Namibia Compass</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">&#9776;</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html" aria-current="page">Destinations</a></li>
+          <li><a href="plan.html">Plan a Trip</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-title container">
+      <h1>Explore Namibia</h1>
+      <p>Search the guide, filter by type of experience and save the places you want to visit. Your filters and favourites are remembered on this device.</p>
+    </section>
+
+    <section class="section container" aria-labelledby="filters-heading">
+      <h2 id="filters-heading" class="visually-hidden">Filter and sort destinations</h2>
+      <div class="filters" role="search">
+        <div class="field">
+          <label for="search">Search</label>
+          <input id="search" type="search" placeholder="Try dunes, seals or Kunene" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="category">Category</label>
+          <select id="category">
+            <option value="all">All categories</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="sort">Sort by</label>
+          <select id="sort">
+            <option value="name">Name (A to Z)</option>
+            <option value="region">Region</option>
+            <option value="budget-low">Budget (lowest first)</option>
+            <option value="budget-high">Budget (highest first)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label class="choice" for="saved-only">
+            <input id="saved-only" type="checkbox">
+            Show saved only
+          </label>
+        </div>
+        <div class="field">
+          <button id="reset-filters" class="button" type="button">Clear filters</button>
+        </div>
+      </div>
+
+      <p id="results-status" class="status" role="status" tabindex="-1"></p>
+      <ul id="destination-grid" class="card-grid"></ul>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="https://youtu.be/gLar1JgrIUY?si=F1yg_u2h6d_c56rL" target="_blank" rel="noopener">Project demo video<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        <li><a href="attributions.html">Attributions</a></li>
+      </ul>
+      <p>&copy; <span id="year">2026</span> Anselm Munango &middot; WDD 231 final project &middot; Namibia</p>
+    </div>
+  </footer>
+  <script type="module" src="js/destinations.js"></script>
+</body>
+</html>

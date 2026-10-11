@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eraka Lyetu Site Plan | WDD231 W05 Project</title>
+  <meta name="description" content="Site plan for Eraka Lyetu, a Rukwangali language-learning website, by Anselm Munango.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&amp;family=Source+Sans+3:wght@400;600&amp;display=swap">
+  <link rel="stylesheet" href="styles/site-plan.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Eraka Lyetu Site Plan</h1>
+    <p>WDD231 &ndash; W05 Project &ndash; Anselm Munango</p>
+  </header>
+
+  <nav class="site-nav" aria-label="Site plan sections">
+    <ul>
+      <li><a href="#name">Name</a></li>
+      <li><a href="#purpose">Purpose</a></li>
+      <li><a href="#scenarios">Scenarios</a></li>
+      <li><a href="#colors">Colors</a></li>
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#wireframes">Wireframes</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="name">
+      <h2>1. Site Name</h2>
+      <p><strong>Eraka Lyetu</strong></p>
+      <p>The name means &ldquo;our language&rdquo; in Rukwangali. It tells visitors right away that the site belongs to the Rukwangali-speaking community and exists to keep the language alive and in daily use.</p>
+    </section>
+
+    <section id="purpose">
+      <h2>2. Site Purpose</h2>
+      <ul>
+        <li>Teach Rukwangali vocabulary, phrases, and pronunciation through short daily lessons.</li>
+        <li>Give learners a way to practice with spaced-repetition flashcards so words are remembered long term.</li>
+        <li>Share a bilingual reading section (Rukwangali and English) so learners can read real text.</li>
+        <li>Motivate regular practice with progress tracking, streaks, and points.</li>
+        <li>Support language preservation by digitizing Rukwangali in a form young people want to use.</li>
+      </ul>
+    </section>
+
+    <section id="scenarios">
+      <h2>3. Scenarios</h2>
+      <p>These questions represent what the target audience will ask when they arrive.</p>
+      <ol>
+        <li>A young Namibian who grew up in Windhoek understands some Rukwangali but cannot speak it well: <em>&ldquo;Where can I practice speaking with correct pronunciation for only ten minutes a day?&rdquo;</em></li>
+        <li>A missionary, teacher, or aid worker moving to the Kavango region: <em>&ldquo;What are the most useful words and greetings I should learn first?&rdquo;</em></li>
+        <li>A parent in the diaspora: <em>&ldquo;How can I help my children learn our language when we do not live near family?&rdquo;</em></li>
+        <li>A returning learner: <em>&ldquo;How do I see which words I am forgetting and review them?&rdquo;</em></li>
+      </ol>
+    </section>
+
+    <section id="colors">
+      <h2>4. Color Schema</h2>
+      <p>The palette is inspired by the green riverbanks and warm earth tones of the Kavango region. This document uses the same colors.</p>
+      <ul class="swatches">
+        <li><span class="swatch swatch-green" aria-hidden="true"></span><strong>River Green &ndash; #1F4D3A</strong><br>Header, footer, main headings, and navigation background.</li>
+        <li><span class="swatch swatch-ochre" aria-hidden="true"></span><strong>Kavango Ochre &ndash; #C8872B</strong><br>Buttons, links on hover, and highlights such as streak and points badges.</li>
+        <li><span class="swatch swatch-cream" aria-hidden="true"></span><strong>Sand Cream &ndash; #FAF6EE</strong><br>Page background and card backgrounds, keeping reading areas calm.</li>
+        <li><span class="swatch swatch-charcoal" aria-hidden="true"></span><strong>Charcoal &ndash; #1E1E1E</strong><br>Body text for strong contrast on the cream background.</li>
+      </ul>
+    </section>
+
+    <section id="typography">
+      <h2>5. Typography</h2>
+      <ul>
+        <li><strong class="font-heading">Merriweather (bold)</strong> is used for the site name and all headings. Its sturdy serif letters feel trustworthy and cultural.</li>
+        <li><strong>Source Sans 3 (regular and semi-bold)</strong> is used for body text, buttons, and navigation. It is clean and easy to read on small phone screens, and it handles Rukwangali characters well.</li>
+      </ul>
+      <p>Both fonts are loaded from Google Fonts and are applied to this document, with Georgia and Arial as fallbacks.</p>
+    </section>
+
+    <section id="wireframes">
+      <h2>6. Home Page Wireframes</h2>
+
+      <figure class="wire-figure">
+        <div class="wire wire-mobile">
+          <div class="box box-dark">Logo &ndash; Eraka Lyetu &nbsp;&#9776;</div>
+          <div class="box box-hero">Hero: &ldquo;Learn Rukwangali&rdquo;<br><span class="btn-box">Start Learning</span></div>
+          <div class="box">Daily lesson card</div>
+          <div class="box">Flashcard review card</div>
+          <div class="box">Bilingual reading preview</div>
+          <div class="box">Streak and points</div>
+          <div class="box box-dark">Footer</div>
+        </div>
+        <figcaption>Mobile view: one column, stacked cards, menu collapsed behind a button.</figcaption>
+      </figure>
+
+      <figure class="wire-figure">
+        <div class="wire wire-wide">
+          <div class="box box-dark">Logo &ndash; Eraka Lyetu &nbsp;|&nbsp; Home &nbsp; Lessons &nbsp; Review &nbsp; Read &nbsp; Progress</div>
+          <div class="box box-hero">Hero: &ldquo;Learn Rukwangali&rdquo; with short intro and <span class="btn-box">Start Learning</span></div>
+          <div class="wire-row">
+            <div class="box">Daily lesson card</div>
+            <div class="box">Flashcard review card</div>
+            <div class="box">Bilingual reading preview</div>
+          </div>
+          <div class="wire-row">
+            <div class="box">Streak and points</div>
+            <div class="box">About the language and mission</div>
+          </div>
+          <div class="box box-dark">Footer: contact, about, links</div>
+        </div>
+        <figcaption>Wide view (desktop): full navigation bar and cards arranged in a row.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Anselm Munango &ndash; WDD231, BYU-Pathway Worldwide</p>
+  </footer>
+</body>
+</html>
